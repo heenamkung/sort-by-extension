@@ -1,0 +1,30 @@
+﻿  main.cpp
+c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xutility(2310): warning C4244: '=': conversion from 'const wchar_t' to 'char', possible loss of data
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xutility(2329): note: see reference to function template instantiation '_OutIt std::_Copy_unchecked1<_InIt,_OutIt>(_InIt,_InIt,_OutIt,std::_General_ptr_iterator_tag)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _InIt=const wchar_t *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xutility(2342): note: see reference to function template instantiation '_OutIt *std::_Copy_unchecked<const wchar_t*,char*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _InIt=const wchar_t *
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.10.25017\include\xutility(2351): note: see reference to function template instantiation '_OutIt std::_Copy_no_deprecate<_InIt,_OutIt>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _InIt=std::_String_const_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+  c:\users\hee\documents\visual studio 2017\projects\sort_files\sort_files\stringhandling.h(60): note: see reference to function template instantiation '_OutIt std::copy<std::_String_const_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,std::_String_iterator<std::_String_val<std::_Simple_types<char>>>>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=std::_String_iterator<std::_String_val<std::_Simple_types<char>>>,
+              _InIt=std::_String_const_iterator<std::_String_val<std::_Simple_types<wchar_t>>>
+          ]
+c:\users\hee\documents\visual studio 2017\projects\sort_files\sort_files\scanfile.h(32): warning C4715: 'scanFirstFile': not all control paths return a value
+c:\users\hee\documents\visual studio 2017\projects\sort_files\sort_files\main.cpp(30): warning C4700: uninitialized local variable 'FindFileData' used
+  sort_files.vcxproj -> c:\users\hee\documents\visual studio 2017\Projects\sort_files\Debug\sort_files.exe
+  sort_files.vcxproj -> c:\users\hee\documents\visual studio 2017\Projects\sort_files\Debug\sort_files.pdb (Partial PDB)
