@@ -1,43 +1,24 @@
-#include <iostream>
-#include <Windows.h>
-#include <string>
-#include <direct.h>
-#include <fstream>
-#include <algorithm>
-#include <tchar.h> 
-#include <functional> 
-#include <cctype>
-#include <locale>
-#include "userInput.h"
-#include "stringHandling.h"
-#include "scanFile.h"
+#pragma once
+
+
+#include "FileScanner.h"
 
 using namespace std;
 
 
 
 int main() {
-	string mp3_folder;
-	mp3_folder = get_directory();
 
-	//file handlers 
-	WIN32_FIND_DATA FindFileData;
-	HANDLE hFind;
-
-	wstring all_mp3 = conv(mp3_folder) + L"/*"; // adds "/*.mp3" to the end of path. Used to search all mp3 files in dir.  e.g C:\\Users\\Hee\\Documents\\*.mp3
-	
-
-	if (scanFirstFile(hFind, FindFileData, all_mp3, conv(mp3_folder))==0) {
-		cout << "mp3 file not found" << endl;
-		return 0;
+	FileScanner fileScanner;
+	if (!fileScanner.scanFirstFile()) {
+		cout << "File not found" << endl;
 	}
 
-	while (FindNextFile(hFind, &FindFileData)) {
-		scanNextFile(hFind, FindFileData, conv(mp3_folder));
+	while (fileScanner.nextFileExists()) {
+		fileScanner.scanNextFile();
 	}
-	cout << "Sorting finished" << endl;
 
-	
+	cout << "Sorting Finished" << endl;
 		
 
 	system("pause");

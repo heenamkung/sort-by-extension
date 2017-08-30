@@ -19,10 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="FileScanner.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="scanFile.h" />
+    <ClInclude Include="FileScanner.h" />
     <ClInclude Include="sortFile.h" />
     <ClInclude Include="stringHandling.h" />
     <ClInclude Include="userInput.h" />

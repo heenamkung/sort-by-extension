@@ -18,11 +18,11 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FileScanner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="scanFile.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="sortFile.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -30,6 +30,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="userInput.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FileScanner.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
