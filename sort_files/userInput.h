@@ -15,8 +15,8 @@ inline string get_directory() {
 	cout << "Enter directory where files are stored: (e.g: C://Users/Bob/Documents) " << endl;
 	static string dir; // Get directory where mp3 files are stored
 	cin >> dir;
-	//mp3_dir = "C://Users/Hee/Documents/hey";
+	
 
-	_chdir(dir.c_str()); //change current dir to mp3_dir
+	_chdir(dir.c_str()); //change current directory to dir
 	return dir;
 }
